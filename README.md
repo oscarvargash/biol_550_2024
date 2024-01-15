@@ -24,35 +24,6 @@ Every week in lab you will connect to a Linux virtual machine. There are two way
 
 [W-1](https://github.com/oscarvargash/biol_550_2022/tree/main/week_01) Introduction to bash
 
-[W-2](https://github.com/oscarvargash/biol_550_2022/tree/main/week_02) Runing programs: quality control of raw reads with fastqc, BBtools, BBduk
-
-[W-3](https://github.com/oscarvargash/biol_550_2022/tree/main/week_03) Assemblage of sequences from short reads, genbank, bbmap, SAMtools, sam2consensus, IGV genome viewer
-
-[W-4](https://github.com/oscarvargash/biol_550_2022/tree/main/week_04) DNA alignment, MAFFT, AliView, bash loops
-
-[W-5](https://github.com/oscarvargash/biol_550_2022/tree/main/week_05) PAUP, figtree, GitHub 
-
-[W-6] Project proposal presentation and submission
-
-[W-7](https://github.com/oscarvargash/biol_550_2022/tree/main/week_07) IQTREE, concatenation, more loops, 
-
-[W-8](https://github.com/oscarvargash/biol_550_2022/tree/main/week_08) MrBayes, tracer
-
-[W-9](https://github.com/oscarvargash/biol_550_2022/tree/main/week_09) basic shell scripts, BeauTi and the BEAST, chronogram inference
-
-[W-10] No class (Cesar Chaves holiday)
-
-[W-11](https://github.com/oscarvargash/biol_550_2022/tree/main/week_11) Project dataset submission, Tree visualization and manipulation in R, character tracing in R
-
-[W-12](https://github.com/oscarvargash/biol_550_2022/tree/main/week_12) Introduction to python
-
-[W-13](https://github.com/oscarvargash/biol_550_2022/tree/main/week_13) Loops in python, pandas
-
-[W-14] Phylo-hub: work with your data in the lab (assistance is mandatory)
-
-[W-15] Final project presentations
-
-## [Common questions about data processing](https://github.com/oscarvargash/biol_550_2022/tree/main/Q_&_A)
 
 # Instructor:
 

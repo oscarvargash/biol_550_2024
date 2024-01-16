@@ -23,7 +23,7 @@ Every week in lab you will connect to a Linux virtual machine. There are two way
 ## Weekly program (subject to change):
 
 [W-1](https://github.com/oscarvargash/biol_550_2024/tree/main/week_01) Introduction to bash
-
+[W-2](https://github.com/oscarvargash/biol_550_2024/tree/main/week_02) Executing programs in bash, FastQC, BBtools: BBDuk
 
 # Instructor:
 

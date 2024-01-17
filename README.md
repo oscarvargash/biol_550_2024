@@ -18,6 +18,8 @@ Every week in lab you will connect to a Linux virtual machine. There are two way
 
 1. log in with HSU credetials into the [vlinux.humboldt.edu](https://vlinux.humboldt.edu/) This should work smoothly in your computer station at the lab and possibly in your own laptop.
 
+When connected select > Show the remote desktop at its resolution using scroll bars, then > Resize the remote display to match this window
+
 2. Install NoMachine in your laptop. [Installation instructions](https://its.humboldt.edu/vlinux-home-instructions)
 
 ## Weekly program (subject to change):

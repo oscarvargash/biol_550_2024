@@ -145,7 +145,7 @@ Perform the filtering and trimming in the second file `*R2*`. Make sure the file
 
 1. Which file had more contaminants R1 or R2 (`statsf*`)?
 
-2. Was there a significant difference in the trimming between R1 and R2 (`statst*`? briefly explain
+2. Was there a significant difference in the trimming between R1 and R2 (`statst*`)? briefly explain
 
 
 <details>

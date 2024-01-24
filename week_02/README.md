@@ -25,7 +25,7 @@ Please download in your machine a compressed file with the data in a folder name
 cd Documents
 mkdir week_02
 cd week_02
-wget https://github.com/oscarvargash/biol_550_2022/raw/main/week_02/files/reads1.zip
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_02/files/reads1.zip
 ```
 
 As you can see, this is a compressed file. We can decompressed by
@@ -77,19 +77,19 @@ It seems that we can simply add the name of the file as as the first argument, a
 fastqc S1870_L008_R1_001.fastq.gz -o .
 ``` 
 
-Once it has finish you can list all files and see the output.
+Once it has finish you can list all files and see the output. 
 
 ```
 ls
 ```
 
-You can navigate with the mouse and open the html report in a web navigator
+Open the file in firefox using the the right clik option "open with." Scroll through the results, for the purposes of this lab we will only pay attention to the "basic statistics" and the "per base sequence quality."  
 
 Congrats!!! you have excuted a program succesfully
 
 ### Exercise 1
 
-Analyze the second file with FastQC. Upon completion of the analysis compare the results and decide which of the files contains reads with better quality. Submit your answer in CANVAS along with a brief explanation.
+Analyze the second file with FastQC. Upon completion of the analysis compare the results (basic statistics and per base sequence quality) and decide which of the files contains better data in terms of quality. Submit your answer in CANVAS along with a brief explanation.
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
@@ -103,13 +103,7 @@ We will trim the reads found in the files from contaminants and low quality regi
 bbduk.sh -h
 ```
 
-It seems that with bbduk.sh `-h` does not work. Let's follow the screen instruction and type
-
-```
-bbduk.sh
-```
-
-We want to trim contamintants found in the reference file `illumina_primers.fasta`. Let's take a look at the file 
+We want to trim contaminants found in the reference file `adapters.fa`. Let's take a look at the file 
 
 ```
 cat ~/../../opt/bbmap/resources/adapters.fa
@@ -122,9 +116,13 @@ bbduk.sh in=S1870_L008_R1_001.fastq.gz ref=~/../../opt/bbmap/resources/adapters.
 ```
 
 `ktrim` indicates which side of the read should be trimmed
-`k` indicates the kamer size to look for contaminats, contaminants shorther than K will not be found
+
+`k` indicates the kmer size to look for contaminats, contaminants shorther than K will not be found
+
 `mink` looks for shorter kmers at the end of reads
-`hdist` indicates the number of mistmatches allowed in the kamer for matching to contaminants
+
+`hdist` indicates the number of mistmatches allowed in the kmer for matching to contaminants
+
 `ml` is the minimum lenght of a given read
 
 Now that we have removed contaminants we will remove regions of the reads with low quality scores
@@ -134,21 +132,24 @@ bbduk.sh in=S1870_L008_R1_001.f.fastq.gz ref=~/../../opt/bbmap/resources/adapter
 ```
 
 `qtrim` indicates where to trim reads, in this case we are trming on both left and right
+
 `trimq` indicates the minimum phred score allowed
+
 `minlength` indicates the minimum lenght of a read allowed
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Exercise 2
 
-Perform the filtering and trimming in the second file `*R2*`, then excute fastqc on both final files. Answer the following questions:
+Perform the filtering and trimming in the second file `*R2*`. Make sure the file name for the stats is different. Answer the following questions and submit your answers to CANVAS:
 
-1. Which file had more contaminants R1 or R2?
-2. Was there a significant difference after reads have been both trimmed and filtered when compared with the non-filtered ones? briefly explain
+1. Which file had more contaminants R1 or R2 (`statsf*`)?
+
+2. Was there a significant difference in the trimming between R1 and R2 (`statst*`? briefly explain
 
 
 <details>
-  <summary>ONLY AS A LAST RESOURCE, Click here to see the commands to analyze the data of exercise 2</summary>
+  <summary>ONLY AS A LAST RESOURCE (in case you are feeling lost), Click here to see the commands to analyze the data of exercise 2</summary>
   
 ```
 bbduk.sh in=S1870_L008_R2_001.fastq.gz ref=~/../../opt/bbmap/resources/adapters.fa ktrim=r k=21 mink=11 hdist=2 ml=50 out=S1870_L008_R2_001.f.fastq.gz stats=statsf2.txt

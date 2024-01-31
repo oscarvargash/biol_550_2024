@@ -1,6 +1,6 @@
 # Week three
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 To start this tutorial you need to be logged in the Linux virtual machine
 [vlinux.humboldt.edu](https://vlinux.humboldt.edu/)
@@ -22,7 +22,7 @@ First, let's download the data needed for today's exercise.
 cd Documents
 mkdir week_03
 cd week_03
-wget https://github.com/oscarvargash/biol_550_2022/raw/main/week_03/files/files_w3.zip
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_03/files/files_w3.zip
 ```
 
 Let's unzip the data 
@@ -31,7 +31,7 @@ Let's unzip the data
 unzip files_w3.zip
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Download reference
 
@@ -39,7 +39,7 @@ GenBank is a repository of DNA sequences, it contains (in theory) sequences for 
 
 ![](img/gb.png)
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 We will download our reference from GenBank. Our data is a subset of genomic reads that correspond the nuclear ribosomal RNA. Inside your virtual linux go to:
 
@@ -75,11 +75,11 @@ mv ~/Downloads/sequence.fasta .
 
 </details>
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Performing the mapping
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 
 First we need to create a reference. This step creates a database for bbmap of the reference.
@@ -109,12 +109,12 @@ python2 sam2consensus.py -i D_azur.sam
 cat KX063971.1__D_azur.fasta
 ```
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 ### Vizualizing the mapping
 
-> Add the yellow flag to the right corner of your laptop ![](img/yellow.jpeg)
+> Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
 
 We can vizualize the mapping by using the Integrative Genomics Viewer. Open the application by:
@@ -143,7 +143,7 @@ You should be able to see the mapping now
 
 ![](img/igv2.png)
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 ### Exercise

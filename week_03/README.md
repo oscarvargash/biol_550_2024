@@ -102,17 +102,10 @@ Now let's create the bam file:
 sh bs.sh
 ```
 
-Finally we create the consesus using a python2 script
-
-```
-python2 sam2consensus.py -i D_azur.sam
-cat KX063971.1__D_azur.fasta
-```
-
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
-### Vizualizing the mapping
+### Vizualizing the mapping (bam file)
 
 > Add the flag to the corner of your screen ![](img/yellow.jpeg)
 
@@ -152,5 +145,4 @@ Navigate the mapping in IGV and answer the following questions:
 
 1. Do the reads match exactly the reference?
 2. Identify at least two problematic regions, indicate their coordinates (in base pairs) and why you think these are problematic.
-3. (optional) Map the reads to the consensus sequence `KX063971.1__D_azur.fasta`, are those problems solved?
 

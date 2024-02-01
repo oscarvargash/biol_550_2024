@@ -28,7 +28,7 @@ wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_03/files/files_
 Let's unzip the data 
 
 ```
-unzip files_w3.zip
+unzip files_w3u.zip
 ```
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)

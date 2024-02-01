@@ -22,7 +22,7 @@ First, let's download the data needed for today's exercise.
 cd Documents
 mkdir week_03
 cd week_03
-wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_03/files/files_w3.zip
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_03/files/files_w3u.zip
 ```
 
 Let's unzip the data 

@@ -30,6 +30,9 @@ When connected select > Show the remote desktop at its resolution using scroll b
 
 [W-3](https://github.com/oscarvargash/biol_550_2024/tree/main/week_03) Mapping reads BBmap, IGV, samtools, GenBank
 
+
+[W-4](https://github.com/oscarvargash/biol_550_2024/tree/main/week_04) Alignments, mafft, aliview, bash loops
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.

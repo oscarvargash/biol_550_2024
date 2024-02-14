@@ -91,13 +91,21 @@ Do a parsimony search:
 hsearch
 ```
 
-When asked about increasing the number of maximum trees, type `y` and the type option `2` to avoid this question in the future. At the end of the search you should see a summary of all the trees found.
+When asked about increasing the number of maximum trees, type `y`, then write `200`, and finally type option `2` to avoid this question in the future. At the end of the search you should see a summary of all the trees found.
 
 We can see a single tree by typing
 
 ```
 ShowTrees
 ```
+
+This option shows tree 1 saved in memory. If we want to see another tree we need to know the sintax for `ShowTrees`
+
+```
+ShowTrees ?
+```
+
+How do we display tree 99?
 
 Because we have more than a 100 trees, a good strategy is to summarize our results into a concensus tree.
 
@@ -139,7 +147,7 @@ Why a VCS? Science is about repeatability and reproducibility. Similarly to maki
 
 Why Git? it is a Distributed VCS, it is more flexible and of course it is popular, and this means, more documentation and long term support in most cases. There are dozens of version control systems on the market, but some of the world's most renowned projects (like the Linux Kernel, Ruby on Rails, or jQuery) and several well known companies (Google, Facebook, Microsoft, Twitter, LinkedIn, Netflix) are using Git as their VCS of choice. 
 
-Github and Bitbuckect are web interfaces of `git`, In the last years code-specific repositories have become popular among biologists. Github and Bitbuckect are the main platforms used. Both platforms offer a free accounts, but you can open an academic account with pro capabilities with your UCSC email.
+Github and Bitbucket are web interfaces of `git`, In the last years code-specific repositories have become popular among biologists. Github and Bitbucket are the main platforms used. Both platforms offer a free accounts, but you can open an academic account with pro capabilities with your UCSC email.
 
 # Creating a GitHub account
 
@@ -169,11 +177,13 @@ Once in your repository you can edit the `README.md` file by clicking on the pen
 ```
 # This is is the title of project
 
-this is the first paragraph explaining the question of my project
+This is the first a paragraph explaining the question/hypotheses to be addressed and its relevance
 
-This is the paragraph explanin the hypothesis I/we are testing
 
-This is the paragraph explaning where the data is going to be obtained from with a preliminary plan for analysing it.
+This is the paragraph that introduces the focal group of organisms 
+
+
+This is the paragraph explaning where the data is going to be obtained from, and the methods planned ot be used
 ```
 
 You can now more about the sytax of markdown github [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)

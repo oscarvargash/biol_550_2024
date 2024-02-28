@@ -35,6 +35,11 @@ When connected select > Show the remote desktop at its resolution using scroll b
 
 [W-5](https://github.com/oscarvargash/biol_550_2024/tree/main/week_05) Paup, FigTree, GitHub
 
+W-6 Project presentations
+
+[W-7](https://github.com/oscarvargash/biol_550_2024/tree/main/week_07) IQtree, concatenation
+
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.

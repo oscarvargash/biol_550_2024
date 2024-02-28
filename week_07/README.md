@@ -57,8 +57,8 @@ In the output we can see that `iqtree` perform multiple tests in all the possibl
 `iqtree` is currently the fastest and more accurate program to infer phylogenies using maximum likelihood. It can do the tree search and infer support statistics for the tree at the same time
 
 ```
-iqtree -m GTR+G -bb 1000 -s ccsA-ndhD.fasta
-figtree ccsA-ndhD.fasta.contree
+iqtree -bb 1000 -s ccsA-ndhD.fasta -redo
+figtree ccsA-ndhD.fasta.treefile
 ```
 
 Let's clean a bit our folder before the next step:
@@ -78,13 +78,13 @@ for file in *.fasta; do echo $file; done
 We can go one step further and print the commands we want to utilize:
 
 ```
-for file in *.fasta; do echo iqtree -m GTR+G -bb 1000 -s $file; done
+for file in *.fasta; do echo iqtree -bb 1000 -s $file; done
 ```
 
 This looks pretty good, now write the loop in a way that it will analyze every single alignment:
 
 ```
-for file in *.fasta; do iqtree -m GTR+G -bb 1000 -s $file; done
+for file in *.fasta; do iqtree -bb 1000 -s $file; done
 ```
 
 Explore the trees obtanined, do they represent the same relationships?
@@ -113,8 +113,13 @@ cat supermatrix.model
 We now can run the supermatrix analysis:
 
 ```
-iqtree -m GTR+G -bb 1000 -s supermatrix.fasta -spp supermatrix.model 
+iqtree -bb 1000 -s supermatrix.fasta -spp supermatrix.model 
 ```
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
+### Exercise
+
+Open the concatenated tree `supermatrix.model.treefile` and compare it with two gene trees. Make sure bootstrap support are shown in all three trees. What are the differences between the concatenated tree and the gene trees?
+
+Type your answer in the canvas exercise for this lab.

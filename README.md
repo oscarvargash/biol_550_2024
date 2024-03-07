@@ -39,7 +39,7 @@ W-6 Project presentations
 
 [W-7](https://github.com/oscarvargash/biol_550_2024/tree/main/week_07) IQtree, concatenation
 
-[W-7](https://github.com/oscarvargash/biol_550_2024/tree/main/week_08) Mr. Bayes
+[W-8](https://github.com/oscarvargash/biol_550_2024/tree/main/week_08) Mr. Bayes
 
 # Instructor:
 

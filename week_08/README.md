@@ -45,7 +45,6 @@ MrBayes operates like PAUP, it is a command line program that can operate intera
 
 ```
 xdg-open cp_2_genes.nexus
-xdg-open cp_2_genes.model
 ```
 
 Once the file is open, paste the following text at the bottom of the `nexus` file after removing the block for codons
@@ -66,7 +65,7 @@ begin mrbayes;
     unlink revmat=(all) shape=(all) statefreq=(all);
     prset applyto=(all) ratepr=variable;
     
-    mcmc ngen=1000000 printfreq=1000 samplefreq=1000 relburnin=yes burninfrac=0.25							
+    mcmc ngen=500000 printfreq=1000 samplefreq=1000 relburnin=yes burninfrac=0.25							
 	diagnfreq=1000 diagnstat=maxstddev											
 	nchains=4 savebrlens=yes 
 	filename=cp_2_genes;
@@ -76,6 +75,8 @@ begin mrbayes;
 end;
 
 ```
+
+Make sure to save the file and then close the editor.
 
 ### Running MrBayes
 
@@ -108,7 +109,7 @@ tracer
 
 Drag and drop the one of the `*.p` files on the  `tracer` application. Summary statistics are shown for every parameter calculated.
 
-Now drop the other `*.p` file. If both chains converged they should presetn similar likelihood values.
+Now drop the other `*.p` file. If both chains converged they should present similar likelihood values.
 
 If everything looks good, now you know that you can trust the final result:
 

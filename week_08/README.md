@@ -84,9 +84,13 @@ Make sure to save the file and then close the editor.
 mb -i cp_2_genes.nexus
 ```
 
-This will take some minutes, lets keep the program running while we talk about all the parameters used in this analysis. Once the analysis has finished type `quit` to exit MrBayes
+This will take some minutes, lets keep the program running while we talk about all the parameters used in this analysis.
 
-> == ![](img/green.jpeg)
+Stop the analysis, type `no` when Mr.Bayes ask you if you want to continue with the analysis.
+
+Once the analysis has finished type `quit` to exit MrBayes
+
+> Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Checking the output
 
@@ -96,7 +100,7 @@ Let's take a peek of some of these files
 
 ```
 head cp_2_genes.run1.p
-head cp_2_genes.run1.t
+tail cp_2_genes.run1.t
 ```
 
 What are those files?

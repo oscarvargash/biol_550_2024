@@ -27,11 +27,11 @@ The `.sh` suffix indicates that this script is to be excuted on shell (which is 
 cd Documents
 mkdir week_09
 cd week_09
-wget https://github.com/oscarvargash/biol_550_2022/raw/main/week_09/files/files.zip
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_09/files/files.zip
 unzip files.zip
 
 ```
-Notice how there is an "enter" at the end of the sript, this is to ensure the last line is executed by the shell. Also notice that lines that start with `#` are not interpreted as commands, these are comments that you can add to your script to expmain it.
+Notice how there is an "enter" at the end of the script, this is to ensure the last line is executed by the shell. Also notice that lines that start with `#` are not interpreted as commands, these are comments that you can add to your script to expmain it.
 
 3. Save the file while closing nano:
 <kbd>control</kbd> + <kbd>x</kbd>
@@ -106,7 +106,7 @@ You can open beast and run the file we just created. However, we will run this a
 3. Upload the file `two_cp_g.xml` to the subfolder `data`, you can add the label `two_cp_g`
 4. Go to <kbd>Tasks</kbd> and crate a new task
 5. Add `beast cp` as the description, and select as the <kbd>Imput data</kbd> the `two_cp_g.xml` that you uploaded in the previous step.
-6. In the <kbd>Select tool</kbd> tab, select the `BEAST2 (current)`
+6. In the <kbd>Select tool</kbd> tab, select the `BEAST (current) on ACCESS`
 7. Click on parameters and change the maximum numbers of hours to run to `12`
 8. Finally click <kbd>Save and run</kbd> to run the task 
 9. You can check the status of the job in the <kbd>Tasks</kbd>
@@ -121,7 +121,8 @@ You can open beast and run the file we just created. However, we will run this a
 To avoid the wait, we will dowload the results from an analysis previously ran:
 
 ```
-wget https://github.com/oscarvargash/biol_550_2022/raw/main/week_09/files/files2.zip
+cd ~/Documents/week_09/
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_09/files/files2.zip
 unzip files2.zip
 ```
 
@@ -152,4 +153,10 @@ Congrats you have crated your first chronogram!
 
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
+
+### Exercise
+
+1. Based on the chornogram, what is the most recent divergence in the tree? in other words, which species are the most recent to have diverged? Indicate their age and their confidence interval.
+
+2. What is the age and the confidence interval for of _Bertholletia excelsa_?
 

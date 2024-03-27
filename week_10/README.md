@@ -87,10 +87,14 @@ We will create an image file from our recently obtained tree and will upload it 
 Go to your GitHub project you created [previously](https://github.com/oscarvargash/biol_550_2024/tree/main/week_05#github) 
 
 Once you are there click on the <kbd>+</kbd> buttom in the top right and select the option <kbd>create new file</kbd> 
+
 ![](img/gh1.png)
 
+
 Then type `files/test.txt` this will create a folder with a new file called test.txt. Click twice on <kbd>commit changes</kbd> 
+
 ![](img/gh2.png)
+
 
 This file is just a placeholder file we have created so we could create the `files` folder.
 

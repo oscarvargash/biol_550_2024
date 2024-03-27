@@ -43,6 +43,8 @@ W-6 Project presentations
 
 [W-9](https://github.com/oscarvargash/biol_550_2024/tree/main/week_09) Bash scripts, Beauti & the Beast
 
+[W-10](https://github.com/oscarvargash/biol_550_2024/tree/main/week_10) Astral-pro3, GitHub
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.

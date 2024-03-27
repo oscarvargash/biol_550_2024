@@ -7,9 +7,6 @@ Once logged in the Linux machine, look for the Terminal, it is an icon that cont
 
 You can also write `terminal` in the search bar of the main manu located in the left bottom of the operating system.
 
-
-
-
 ## creating a coalescent-consistent tree
 
 > Add the flag to corner of your screen ![](img/yellow.jpeg)
@@ -24,95 +21,90 @@ wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_10/files/files.
 unzip files.zip
 ```
 
-## Building species trees
+### Inferring gene trees
 
-### Preparing an analysis file using Beauti
-
-> Add the flag to corner of your screen ![](img/yellow.jpeg)
-
-In order to perform a Bayesian analysis with Beast we need to create a `.xml` file that contains all the information necessary for the analysis. Open Beauti:
+We first need to infer gene trees for each on the genes in the downloaded data. Notice that we will use GTR+G to save some time from model testing.
 
 ```
-beauti
+for file in *.aln-cln; do iqtree -bb 1000 -s $file -m GTR+G; done
 ```
 
-You will see a window:
+Let's take a look at one tree:
 
-1. Drag and drop both fasta files
-![](img/beauti.png)
-2. Unlink the substitition models by clicking on <kbd>Unlink Subst. Models</kbd> while having both regions being selected
-![](img/partition.png)
-3. Move to the <kbd>Taxa</kbd> tab and create a taxon set by clicking on <kbd>+</kbd>. Include all the taxa with the exception of Barringtonia. Make this group mononophyletic and add the age of 46. This is the node that will be calibrated to add time to the phylogeny.
-![](img/taxa.png)
-4. Move to the <kbd>Sites</kbd> tab
-![](img/model.png)
-5. Select <kbd>GTR</kbd> and <kbd>Gamma</kbd> for each partition
-6. Move to the <kbd>Clocks</kbd> tab and select a <kbd>Uncorrelated relaxed clock</kbd>, this models assumes that your tree branches are heterogeneous, a common pattern in most topologies.
-![](img/clock.png)
-7. Move to the <kbd>Trees</kbd> tab and select a <kbd>Speciation: Yule model</kbd>, this is a simple model of speciation that assumens no significant chages of speciation rate along your tree.
-8. Move to the <kbd>Piors</kbd> tab, click on <kbd>* Using Tree Prior</kbd> in front of `tmrca(untitled0)`; this is the prior for the age of the most recent common ancestor for the taxon set we created in step 3. Because this age was inferred from another publication (secondary calibration), we will use a <kbd>Normal</kbd> distribution with a mean of 46 and standard deviation of 5, which roughly correspond to the same interval found in the paper we are using for this calibration.
-![](img/prior.png)
-9. Go to the <kbd>MCMC</kbd> tab and change the file name stem to: `two_cp_g`. You can see that in this tab you can change all parameters for the MCMC chain.
-10. File go to <kbd>file</kbd> and select <kbd>Generate Beast File</kbd>. Save your file in the week_09 folder.
+```
+cat AT5G37830.names.fa.aln-cln.treefile
+```
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
-### Runing beast
+### Building a coalescent consistent species tree
 
 > Add the flag to corner of your screen ![](img/yellow.jpeg)
 
-You can open beast and run the file we just created. However, we will run this analysis in the CIPRES portal. This is an excelent and free resource to access high computational power for large datasets.
+The first step for using Astral-pro3 is to create a single file that contains all the trees. To create a single tree we can use `cat` and a wildcards in the following way:
 
-1. Create an account in https://www.phylo.org/
-2. Create a new folder `Lecy`
-3. Upload the file `two_cp_g.xml` to the subfolder `data`, you can add the label `two_cp_g`
-4. Go to <kbd>Tasks</kbd> and crate a new task
-5. Add `beast cp` as the description, and select as the <kbd>Imput data</kbd> the `two_cp_g.xml` that you uploaded in the previous step.
-6. In the <kbd>Select tool</kbd> tab, select the `BEAST (current) on ACCESS`
-7. Click on parameters and change the maximum numbers of hours to run to `12`
-8. Finally click <kbd>Save and run</kbd> to run the task 
-9. You can check the status of the job in the <kbd>Tasks</kbd>
-10. Download results when analysis has finished
+```
+cat *cln.treefile > nc_20g.tre
+```
+
+Let's check that the concatenation of tree files worked:
+
+```
+cat nc_20g.tre
+```
+
+We can now run Astral-pro3:
+
+```
+/astral-pro3 -i nc_20g.tre -o nc_astral.tre
+```
+
+We can now see the tree in fig tree:
+
+```
+figtree nc_astral.tre
+```
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
-### Calculating a chronogram
+
+## Adding images and files to your github project
 
 > Add the flag to corner of your screen ![](img/yellow.jpeg)
 
-To avoid the wait, we will dowload the results from an analysis previously ran:
+We will create a image file from our recently obtained tree and will uploaded to github. To save an image of your tree do the following:
+
+1. Format the tree the best you can, reroot the tree using _Barringtonia_, ladderize the tree (<kbd>trees</kbd>; <kbd>order nodes</kbd>), show the support (<kbd>node labels</kbd>), and adjust the font (<kbd>tip labels</kbd>).
+
+2. Then do <kbd>file</kbd> and <kbd>export jpg</kbd>.
+
+3. Save the file in your `week_10` folder.
+
+> Remove your flag if you are good to continue ![](img/green.jpeg)
+
+### Uploading files to github and referencing them in the text
+
+Go to your GitHub project you created [previously](https://github.com/oscarvargash/biol_550_2024/tree/main/week_05#github) 
+
+Once you are there click on the <kbd>+</kbd> buttom in the top right and select the option <kbd>create new file</kbd> 
+![](img/gh1.png)
+
+Then type `files/test.txt` this will create a folder with a new file called test.txt. Click twice on <kbd>commit changes</kbd> 
+![](img/gh2.png)
+
+This file is just a placeholder file we have created so we could create the `files` folder.
+
+Now click on <kbd>+</kbd> and then <kbd>upload file</kbd>, upload `nc_astral.tre.jpg` and <kbd>commit changes</kbd> 
+
+Your file is now in GitHub. This is the way you should upload your data to your repository.
+
+Since this file is an image we can also add this image to your `readme.MD` file in your main page. Simply clink on the <kbd>pencil</kbd>  for editing and add the following to the code to the line you want the image to display:
 
 ```
-cd ~/Documents/week_09/
-wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_09/files/files2.zip
-unzip files2.zip
+![](files/nc_astral.tre.jpg)
 ```
 
-Open tracer and load the `*.log` file
-
-```
-tracer
-```
-Does it look like a good analysis?
-
-Look at the `stdout.txt` file in a text editor.
-
-Finally, assuming our analysis is good, we can produce a maximum credibility tree:
-
-```
-treeannotator
-```
-
-Load the tree file `two_cp_g.trees` as the <kbd>Imput tree file</kbd> using a <kbd>Burnin</kbd> of `5000` trees that correspond to 50%. Name the output `chrono.tre`
-
-```
-figtree chrono.tre
-```
-
-In figtree show the `scale axis` as `reverse axis`. Also add `node bars` displaying the `height_95_HPD`
-
-Congrats you have crated your first chronogram!
-
+After <kbd>commit changes</kbd> the image should now be displayed in your project page.
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 

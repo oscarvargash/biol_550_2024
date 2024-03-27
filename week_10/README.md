@@ -111,7 +111,7 @@ Remember that the text for the final project submission should be [properly form
 
 ### Exercise
 
-1. Open the tree `cocat_na.treefile` in fig tree, this file contains a concatenated tree calculated from a supermatrix comprised by the 20 genes you analized today. Compare the concatenated tree with the astral tree. Make sure both trees are rooted with _Barringtonia_. Do these two trees comprise the same relationaships? Is their support comparable?
+1. Open the tree `cocat_na.treefile` in figtree, this file contains a concatenated tree calculated from a supermatrix comprised by the 20 genes you analized today. Compare the concatenated tree with the astral tree. Make sure both trees are rooted with _Barringtonia_. Do these two trees comprise the same relationaships? Is their support comparable?
 
-2. Open a couple of gene trees `*.treefile`. Base on the bootstrap support calculated with iqtree, do you believe these gene trees have good signal. briefly explain your answer.
+2. Open a couple of gene trees `*.treefile`. Based on the bootstrap support calculated with iqtree, do you believe these individual gene trees have good signal? Briefly explain your answer.
 

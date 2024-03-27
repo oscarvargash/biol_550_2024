@@ -72,7 +72,7 @@ figtree nc_astral.tre
 
 > Add the flag to corner of your screen ![](img/yellow.jpeg)
 
-We will create a image file from our recently obtained tree and will uploaded to github. To save an image of your tree do the following:
+We will create an image file from our recently obtained tree and will upload it to github. To save an image of your tree do the following:
 
 1. Format the tree the best you can, reroot the tree using _Barringtonia_, ladderize the tree (<kbd>trees</kbd>; <kbd>order nodes</kbd>), show the support (<kbd>node labels</kbd>), and adjust the font (<kbd>tip labels</kbd>).
 
@@ -105,12 +105,13 @@ Since this file is an image we can also add this image to your `readme.MD` file 
 ```
 
 After <kbd>commit changes</kbd> the image should now be displayed in your project page.
+Remember that the text for the final project submission should be [properly formatted](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text). 
 
 > Remove your flag if you are good to continue ![](img/green.jpeg)
 
 ### Exercise
 
-1. Based on the chornogram, what is the most recent divergence in the tree? in other words, which species are the most recent to have diverged? Indicate their age and their confidence interval.
+1. Open the tree `cocat_na.treefile` in fig tree, this file contains a concatenated tree calculated from a supermatrix comprised by the 20 genes you analized today. Compare the concatenated tree with the astral tree. Make sure both trees are rooted with _Barringtonia_. Do these two trees comprise the same relationaships? Is their support comparable?
 
-2. What is the age and the confidence interval for of _Bertholletia excelsa_?
+2. Open a couple of gene trees `*.treefile`. Base on the bootstrap support calculated with iqtree, do you believe these gene trees have good signal. briefly explain your answer.
 

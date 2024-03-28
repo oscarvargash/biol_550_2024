@@ -10,19 +10,19 @@ R is coding language originally designed for statistics. With its increasing pop
 
 We will use R and R-studio (which is a "facade" for R) to perform comparative phylogenetic analyses. 
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to corner of your screen ![](img/yellow.jpeg)
 
 First crate a folder and download the data necessary for the exercise:
 
 1. go to `Documents`
 2. create a folder named `week_11`
-3. Download the files from [GitHub](https://github.com/oscarvargash/biol_550_2022/raw/main/week_11/files/files.zip)
+3. Download the files from [GitHub](https://github.com/oscarvargash/biol_550_2024/raw/main/week_11/files/files.zip)
 4. Transfer `files.zip` to `week_11`
-5. Secondary click on `files.zip` to unzip the files on current folder (avoid creating a new folder inside week_11)
+5. Secondary click on `files.zip` to unzip the files on current folder using `extract to` (avoid creating a new folder inside week_11)
 
 Now that we have the files necessary we can open Rstudio by simply typing `Rstudio` in the search bar of the OS.
 
-Now, we need to create a new R script, this will save all the code we write, so we can easily execute the code later. Go to `file` and then click on `New File` and `R script`
+Now, we need to create a new R script, this will save all the code we write, so we can easily execute the code later. Go to `file` and then click on `New File` and `R script`. Save the file in `week_11` with along with the other files.
 
 ![](img/script.png)
 
@@ -43,10 +43,12 @@ Select the line of code and execute by typing <kbd>control</kbd> + <kbd>return</
 
 You will see your console working on the installation, you only need to make the installation of pakages once (or every time you upgrade your version of R).
 
-Now we need to set our working directory. This is a pivotal line of code for every project
+Now we need to set our working directory. This is a pivotal line of code for every project. An wasy way for setting up the working directory is to click on <kbd>session</kbd> then <kbd>set working directory</kbd> then <kbd>to source file location</kbd>. The previous action will create a single line of code that you can copy and paste into the script.
+
+![](img/rstudio2.png)
 
 ```
-setwd("C:/Users/YOUR_USER/Documents")
+setwd("C:/Users/YOUR_USER/Documents/week_11")
 dir()
 ```
 
@@ -56,7 +58,7 @@ dir()
 
 Now we need to load the packages necessary for the analysis
 
-> Add the yellow flag to the right corner of your monitor ![](img/yellow.jpeg)
+> Add the flag to corner of your screen ![](img/yellow.jpeg)
 
 ```
 library(phytools)
@@ -125,7 +127,7 @@ dev.off()
 Congratulations! you have performed your first stochastic character mapping
  
 
-> Change your flag to green if you are good to continue ![](img/green.jpeg)
+>  Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
 

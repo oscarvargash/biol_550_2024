@@ -48,7 +48,7 @@ Now we need to set our working directory. This is a pivotal line of code for eve
 ![](img/rstudio2.png)
 
 ```
-setwd("C:/Users/YOUR_USER/Documents/week_11")
+setwd("~/Documents/week_11")
 dir()
 ```
 

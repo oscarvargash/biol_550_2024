@@ -56,7 +56,7 @@ cat nc_20g.tre
 We can now run Astral-pro3:
 
 ```
-/astral-pro3 -i nc_20g.tre -o nc_astral.tre
+./astral-pro3 -i nc_20g.tre -o nc_astral.tre
 ```
 
 We can now see the tree in fig tree:

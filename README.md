@@ -45,6 +45,8 @@ W-6 Project presentations
 
 [W-10](https://github.com/oscarvargash/biol_550_2024/tree/main/week_10) Astral-pro3, GitHub
 
+[W-11](https://github.com/oscarvargash/biol_550_2024/tree/main/week_11) Mapping characters
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.

@@ -47,6 +47,8 @@ W-6 Project presentations
 
 [W-11](https://github.com/oscarvargash/biol_550_2024/tree/main/week_11) Mapping characters
 
+[W-12](https://github.com/oscarvargash/biol_550_2024/tree/main/week_12) Introduction to python
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.
@@ -82,6 +84,8 @@ Here is a list of the software associated with the lab. You do not need to insta
 [Tracer](https://github.com/beast-dev/tracer/releases)
 
 [MrBayes](https://nbisweden.github.io/MrBayes/download.html)
+
+[Astral3-pro](https://github.com/chaoszhang/ASTER/blob/master/tutorial/astral-pro3.md)
 
 Linux programs: git, ssh
 

@@ -24,7 +24,7 @@ Let's download the files necessary for our exercise:
 cd Documents
 mkdir week_12
 cd week_12
-wget https://github.com/oscarvargash/biol_550_2022/raw/main/week_12/files/files.zip
+wget https://github.com/oscarvargash/biol_550_2024/raw/main/week_12/files/files.zip
 unzip files.zip
 ```
 

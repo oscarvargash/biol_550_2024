@@ -130,4 +130,6 @@ Congratulations! you have performed your first stochastic character mapping
 >  Remove your flag if you are good to continue ![](img/green.jpeg)
 
 
+## Excersie
 
+Compare with one or two classmates the results for the stochastic mapping: the tree with the pie charts in the nodes and the histogram calculated. Are the results among difference classmates exactly the same? Why do you think this is the case?

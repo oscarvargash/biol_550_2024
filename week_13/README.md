@@ -138,7 +138,7 @@ Do you have any ideas about how to make this script better?
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Code to characterize fasta files
+# code characterize alignments in fasta
 
 import glob
 from Bio import SeqIO
@@ -146,14 +146,14 @@ import pandas as pd
 
 
 fasta_files = (glob.glob)('*.fasta')
-#print(fasta_files)
+print(fasta_files)
+
 
 print("creating dataframe")
 c = ["gene","sequences","length"]
 stats = pd.DataFrame(columns=c)
-#print(stats)
-
-# iterate over every fasta file and count sequences and measure lenght
+print(stats.head)
+        
 
 for file in fasta_files:
     print(file)
@@ -165,10 +165,7 @@ for file in fasta_files:
     print(counter)
     seq_len = len(seq_record)         # calculate length
     print(seq_len)
-    string_parts = file.split("_")     
-    stats = stats._append({"gene":string_parts[0],"sequences":counter,"length":seq_len}, ignore_index=True)
-
-print(stats)
+    stats = stats._append({"gene":file,"sequences":counter,"length":seq_len}, ignore_index=True)     
 
 stats.to_csv(path_or_buf="gene_stats.csv")
 

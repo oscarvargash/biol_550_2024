@@ -118,7 +118,7 @@ print(stats.head)
 Now we can add a line in our loop that will populate the dataframe created before the loop. Make sure you add a tab so the code of line so the code is executed in side the loop.
 
 ```
-stats = stats.append({"gene":file,"sequences":counter,"length":seq_len}, ignore_index=True)
+stats = stats._append({"gene":file,"sequences":counter,"length":seq_len}, ignore_index=True)
 ```
 
 When the code is executed, we can see that our results are nicely organized. Finally we just need to save it.
@@ -166,7 +166,7 @@ for file in fasta_files:
     seq_len = len(seq_record)         # calculate length
     print(seq_len)
     string_parts = file.split("_")     
-    stats = stats.append({"gene":string_parts[0],"sequences":counter,"length":seq_len}, ignore_index=True)
+    stats = stats._append({"gene":string_parts[0],"sequences":counter,"length":seq_len}, ignore_index=True)
 
 print(stats)
 

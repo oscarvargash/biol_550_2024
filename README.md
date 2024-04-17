@@ -49,6 +49,8 @@ W-6 Project presentations
 
 [W-12](https://github.com/oscarvargash/biol_550_2024/tree/main/week_12) Introduction to python
 
+[W-13](https://github.com/oscarvargash/biol_550_2024/tree/main/week_13) Packages and loops in python
+
 # Instructor:
 
 [Oscar Vargas](http://oscarmvargas.com/) (<ov20@humboldt.edu>): botanist and evolutionary biologist, experience with bioinformatics and phylogenomics. Assistant Professor at Humboldt State University.
